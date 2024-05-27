@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import SmoothScroll from "smooth-scroll";
-import Navigation from "./components/Navigation.jsx";
-import Footer from "./components/Footer.jsx";
-import ProfileCard from "./components/ProfileCard.jsx";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
+import ProfileCard from "./components/ProfileCard";
 
 export default function App() {
   // smooth scroll
@@ -37,7 +37,7 @@ export default function App() {
             We're changing the way people budget and save.
           </h1>
           <p className="text-2xl mb-8 text-slate-700">
-          Your bank account's best friend.
+            Your bank account's best friend.
           </p>
         </section>
         <section
@@ -92,33 +92,37 @@ export default function App() {
           }}
         >
           <h2 className="text-4xl font-bold mb-8 text-black">Our Values</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
             <div className="value bg-white p-6 rounded-lg shadow-lg">
               <h3 className="text-2xl font-semibold mb-4 text-black">
-                Value 1
+                Making personal finance fun
               </h3>
-              <p className="mb-4 text-black">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              <p className="mb-4 text-gray-500">
+                Finance is boring. We're here to change that.
               </p>
             </div>
             <div className="value bg-white p-6 rounded-lg shadow-lg">
               <h3 className="text-2xl font-semibold mb-4 text-black">
-                Value 2
+                Empowering people to save
               </h3>
-              <p className="mb-4 text-black">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              <p className="mb-4 text-gray-500">
+                Saving money is hard. We make it easy.
               </p>
             </div>
             <div className="value bg-white p-6 rounded-lg shadow-lg">
               <h3 className="text-2xl font-semibold mb-4 text-black">
-                Value 3
+                Building a community
               </h3>
-              <p className="mb-4 text-black">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              <p className="mb-4 text-gray-500">
+                It might not take a village to save, but it's more fun with one.
               </p>
             </div>
           </div>
-          <img src="/images/friends.jpg" alt="Friends" className="rounded-lg" />
+          <img
+            src="/images/friends.jpg"
+            alt="Friends"
+            className="rounded-lg w-full max-w-screen-md mx-auto shadow-lg"
+          />
         </section>
         <section
           id="team"

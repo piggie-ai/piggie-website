@@ -1,14 +1,14 @@
-// src/components/Navigation.jsx
+import { useEffect, useState } from "react";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Home", href: "#hero", current: true },
-  { name: "Features", href: "#features", current: false },
-  { name: "Mission", href: "#mission", current: false },
-  { name: "Values", href: "#values", current: false },
-  { name: "Team", href: "#team", current: false },
-  { name: "Subscribe", href: "#subscribe", current: false },
+  { name: "Home", href: "#hero" },
+  { name: "Features", href: "#features" },
+  { name: "Mission", href: "#mission" },
+  { name: "Values", href: "#values" },
+  { name: "Team", href: "#team" },
+  { name: "Subscribe", href: "#subscribe" },
 ];
 
 function classNames(...classes) {
@@ -16,6 +16,27 @@ function classNames(...classes) {
 }
 
 export default function Navigation() {
+  const [activeSection, setActiveSection] = useState("");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
+      const scrollPosition = window.scrollY + 200; // Adjust this value for your needs
+
+      sections.forEach((section) => {
+        if (
+          section.offsetTop <= scrollPosition &&
+          section.offsetTop + section.offsetHeight > scrollPosition
+        ) {
+          setActiveSection(section.getAttribute("id"));
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <Disclosure as="nav" className="bg-white w-full fixed top-0 z-20">
       {({ open }) => (
@@ -37,12 +58,16 @@ export default function Navigation() {
                         key={item.name}
                         href={item.href}
                         className={classNames(
-                          item.current
-                            ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                          activeSection === item.href.substring(1)
+                            ? "underline text-black"
+                            : "text-gray-500 hover:bg-slate-100 hover:text-black transition duration-200",
                           "rounded-md px-3 py-2 text-sm font-medium"
                         )}
-                        aria-current={item.current ? "page" : undefined}
+                        aria-current={
+                          activeSection === item.href.substring(1)
+                            ? "page"
+                            : undefined
+                        }
                       >
                         {item.name}
                       </a>
@@ -72,12 +97,16 @@ export default function Navigation() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current
-                      ? "bg-gray-900 text-white"
-                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                    activeSection === item.href.substring(1)
+                      ? "underline text-black"
+                      : "text-gray-500 hover:bg-slate-100 hover:text-black transition duration-200",
                     "block rounded-md px-3 py-2 text-base font-medium"
                   )}
-                  aria-current={item.current ? "page" : undefined}
+                  aria-current={
+                    activeSection === item.href.substring(1)
+                      ? "page"
+                      : undefined
+                  }
                 >
                   {item.name}
                 </Disclosure.Button>

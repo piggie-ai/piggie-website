@@ -16,7 +16,7 @@ export default function ProfileCard({ profile_image, name, role, description, li
         />
         <h2 className="text-xl font-medium text-gray-900">{name}</h2>
         <p className="text-blue-600 font-normal">{role}</p>
-        <p className="mt-2 text-gray-500 text-sm text-center">{description}</p>
+        {description && <p className="mt-2 text-gray-500 text-sm text-center">{description}</p>}
         <div className="mt-4 space-x-3 flex">
           {linkedin && (
             <a href={linkedin} target="_blank" rel="noreferrer" className="text-gray-400 hover:text-gray-600" onClick={(e) => e.stopPropagation()}>
