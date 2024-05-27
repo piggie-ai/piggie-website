@@ -21,12 +21,12 @@ const HomeSection = () => (
       Your bank account's best friend.
     </p>
     <div className="space-x-4">
-      <a
+      {/* <a
         href="#subscribe"
         className="bg-black hover:bg-gray-700 text-white font-bold py-3 px-4 rounded-lg"
       >
         Subscribe
-      </a>
+      </a> */}
       <a
         href="#features"
         className="text-black font-bold py-3 px-4 rounded-lg inline-flex items-center"
