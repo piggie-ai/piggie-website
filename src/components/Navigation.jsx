@@ -8,7 +8,7 @@ const navigation = [
   { name: "Mission", href: "#mission" },
   { name: "Values", href: "#values" },
   { name: "Team", href: "#team" },
-  // { name: "Subscribe", href: "#subscribe" },
+  { name: "Subscribe", href: "#subscribe" },
 ];
 
 function classNames(...classes) {
