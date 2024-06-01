@@ -31,7 +31,7 @@ const SubscribeSection = ({ handleSubmit }) => {
           <input
             type="email"
             id="email"
-            className="mt-1 block w-full border border-gray-300 p-2 rounded-md"
+            className="mt-1 block w-full border border-gray-300 p-2 rounded-md text-gray-900"
             placeholder="you@example.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}

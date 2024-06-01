@@ -24,7 +24,6 @@ const TeamSection = () => (
         linkedin="https://www.linkedin.com/in/micah-kepe/"
         github="https://github.com/micahkepe"
         email="micahkepe@gmail.com"
-        website="https://www.micahkepe.com/"
       />
       <ProfileCard
         profile_image="/images/zach.jpg"
@@ -33,7 +32,6 @@ const TeamSection = () => (
         linkedin="https://www.linkedin.com/in/zachary-kepe-6801b7241/"
         github="https://github.com/zachkepe"
         email="zachkepe@gmail.com"
-        website="https://www.zachkepe.com/"
       />
       <ProfileCard
         profile_image="/images/lia.jpg"

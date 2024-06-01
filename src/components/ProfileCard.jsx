@@ -2,11 +2,10 @@
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-export default function ProfileCard({ profile_image, name, role, description, linkedin, github, x, email, website }) {
+export default function ProfileCard({ profile_image, name, role, description, linkedin, github, x, email }) {
   return (
     <div
       className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300 cursor-pointer w-96"
-      onClick={() => window.open(website, '_blank')}
     >
       <div className="flex flex-col items-center">
         <img
