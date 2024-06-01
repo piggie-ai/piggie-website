@@ -30,7 +30,10 @@ const FeaturesSection = () => (
     <h2 className="text-4xl font-bold mb-8 text-black">Our Features</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {features.map((feature, index) => (
-        <div key={index} className="feature bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-200">
+        <div
+          key={index}
+          className="feature bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-200"
+        >
           <img
             src={feature.imageUrl}
             alt={feature.title}
