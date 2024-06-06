@@ -4,24 +4,9 @@ const SubscribeSection = () => {
   const [email, setEmail] = useState("");
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent the default form submission
-    try {
-      const response = await fetch("/.netlify/functions/subscribe", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
-
-      if (response.ok) {
-        console.log("Subscription successful");
-      } else {
-        console.error("Subscription failed");
-      }
-    } catch (error) {
-      console.error("Error submitting email:", error);
-    }
+    // TODO: Handle form submission
+    e.preventDefault();
+    console.log(email);
   };
 
   return (
