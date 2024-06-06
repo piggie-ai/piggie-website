@@ -1,26 +1,39 @@
 import React, { useState } from "react";
 
-const SubscribeSection = ({ handleSubmit }) => {
+const SubscribeSection = () => {
   const [email, setEmail] = useState("");
 
-  const onSubmit = (e) => {
-    e.preventDefault();
-    handleSubmit(email);
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Prevent the default form submission
+    try {
+      const response = await fetch("/.netlify/functions/subscribe", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        console.log("Subscription successful");
+      } else {
+        console.error("Subscription failed");
+      }
+    } catch (error) {
+      console.error("Error submitting email:", error);
+    }
   };
 
   return (
     <section
       id="subscribe"
       className="subscribe-section min-h-screen flex flex-col justify-center items-center text-center bg-cover bg-center shadow-md rounded p-8 my-6"
-      style={{
-        backgroundImage: "url(/images/subscribe-bg.jpg)",
-      }}
     >
       <h2 className="text-3xl font-semibold mb-4 text-black">Stay Updated!</h2>
       <p className="mb-4 text-black">
         Join our mailing list to get the latest updates about Piggie.
       </p>
-      <form onSubmit={onSubmit} className="w-full max-w-md">
+      <form onSubmit={handleSubmit} className="w-full max-w-md">
         <div className="mb-4">
           <label
             htmlFor="email"
