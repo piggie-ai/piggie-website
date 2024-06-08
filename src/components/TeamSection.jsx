@@ -4,7 +4,7 @@ import ProfileCard from "./ProfileCard";
 const TeamSection = () => (
   <section
     id="team"
-    className="team-section min-h-screen bg-cover bg-center text-center p-10"
+    className="team-section parallax"
     style={{
       backgroundImage: "url(/images/team-bg.jpg)",
     }}

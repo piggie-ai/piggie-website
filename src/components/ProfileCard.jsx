@@ -17,7 +17,7 @@ export default function ProfileCard({
         <img
           className="w-32 h-32 rounded-full object-cover mb-4"
           src={profile_image}
-          alt="Profile of the team member"
+          alt={`Profile of Piggie team member ${name}`}
         />
         <h2 className="text-xl font-medium text-gray-900">{name}</h2>
         <p className="text-blue-600 font-normal">{role}</p>
@@ -33,10 +33,10 @@ export default function ProfileCard({
               target="_blank"
               rel="noreferrer"
               className="text-gray-400 hover:text-gray-600"
-              alt="LinkedIn profile link of the team member"
               onClick={(e) => e.stopPropagation()}
             >
-              <FaLinkedin size={24} />
+              <FaLinkedin size={24} aria-hidden="true" />
+              <span className="sr-only">LinkedIn profile of {name}</span>
             </a>
           )}
           {github && (
@@ -44,11 +44,11 @@ export default function ProfileCard({
               href={github}
               target="_blank"
               rel="noreferrer"
-              alt="GitHub profile link of the team member"
               className="text-gray-400 hover:text-gray-600"
               onClick={(e) => e.stopPropagation()}
             >
-              <FaGithub size={24} />
+              <FaGithub size={24} aria-hidden="true" />
+              <span className="sr-only">GitHub profile of {name}</span>
             </a>
           )}
           {x && (
@@ -56,21 +56,21 @@ export default function ProfileCard({
               href={x}
               target="_blank"
               rel="noreferrer"
-              alt="Twitter profile link of the team member"
               className="text-gray-400 hover:text-gray-600"
               onClick={(e) => e.stopPropagation()}
             >
-              <FaXTwitter size={24} />
+              <FaXTwitter size={24} aria-hidden="true" />
+              <span className="sr-only">Twitter profile of {name}</span>
             </a>
           )}
           {email && (
             <a
               href={`mailto:${email}`}
-              alt="Email address of the team member"
               className="text-gray-400 hover:text-gray-600"
               onClick={(e) => e.stopPropagation()}
             >
-              <FaEnvelope size={24} />
+              <FaEnvelope size={24} aria-hidden="true" />
+              <span className="sr-only">Email {name}</span>
             </a>
           )}
         </div>
