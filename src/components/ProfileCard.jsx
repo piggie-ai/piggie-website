@@ -12,7 +12,7 @@ export default function ProfileCard({
   email,
 }) {
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300 cursor-pointer w-96 border border-gray-200 sm:ml-2 sm:mr-2">
+    <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300 cursor-pointer border border-gray-200 mx-auto w-full sm:w-80 md:w-72 lg:w-64 xl:w-60">
       <div className="flex flex-col items-center">
         <img
           className="w-32 h-32 rounded-full object-cover mb-4"

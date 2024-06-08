@@ -39,9 +39,3 @@ footer {
   background-size: cover;
   background-position: center;
 }
-
-@media (max-width: 768px) {
-  .parallax {
-    background-attachment: scroll;
-  }
-}

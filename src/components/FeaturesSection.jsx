@@ -22,7 +22,7 @@ const features = [
 ];
 
 const FeaturesSection = () => (
-  <section id="features" className="features-section">
+  <section id="features" className="features-section bg-gray-50">
     <h2 className="text-4xl font-bold mb-8 text-black">Our Features</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {features.map((feature, index) => (

@@ -37,7 +37,7 @@ export default function Navigation() {
   }, []);
 
   return (
-    <Disclosure as="nav" className="bg-white w-full fixed top-0 z-20">
+    <Disclosure as="nav" className="bg-white w-full fixed top-0 z-20 border-b border-gray-200">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
