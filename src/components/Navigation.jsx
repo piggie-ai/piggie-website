@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
-import { Disclosure, DisclosureButton, DisclosurePanel } from "@headlessui/react";
+import {
+  Disclosure,
+  DisclosureButton,
+  DisclosurePanel,
+} from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
@@ -37,7 +41,10 @@ export default function Navigation() {
   }, []);
 
   return (
-    <Disclosure as="nav" className="bg-white w-full fixed top-0 z-20 border-b border-gray-200">
+    <Disclosure
+      as="nav"
+      className="bg-white w-full fixed top-0 z-20 border-b border-gray-200"
+    >
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -75,7 +82,7 @@ export default function Navigation() {
                 </div>
               </div>
               <div className="-mr-2 flex md:hidden">
-                <DisclosureButton className="relative inline-flex items-center justify-center rounded-md border-gray-800 bg-white p-2 text-gray-400 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                <DisclosureButton className="relative inline-flex items-center justify-center rounded-md border-gray-800 bg-white p-2 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-400">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -88,7 +95,7 @@ export default function Navigation() {
             </div>
           </div>
 
-          <DisclosurePanel className="md:hidden">
+          <DisclosurePanel className="md:hidden bg-gray-50">
             <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
               {navigation.map((item) => (
                 <DisclosureButton
