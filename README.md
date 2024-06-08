@@ -1,6 +1,15 @@
 # Piggie Website
 
+[![pages-build-deployment](https://github.com/piggie-ai/piggie-website/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/piggie-ai/piggie-website/actions/workflows/pages/pages-build-deployment)
+
 Welcome to the repository for the landing page of the Piggie App. The live version of the landing page can be found [here](https://piggie.app).
+
+![Piggie Logo](public/images/logo-pink.png)
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Installation](#installation)
 
 ## Introduction
 

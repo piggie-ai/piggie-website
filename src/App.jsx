@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import SmoothScroll from "smooth-scroll";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
-import HeroSection from "./components/HomeSection";
+import HomeSection from "./components/HomeSection";
 import FeaturesSection from "./components/FeaturesSection";
 import MissionSection from "./components/MissionSection";
 import ValuesSection from "./components/ValuesSection";
@@ -20,7 +20,7 @@ export default function App() {
     <div className="bg-white min-h-screen flex flex-col items-center">
       <Navigation />
       <main className="flex-grow w-full pt-16">
-        <HeroSection />
+        <HomeSection />
         <FeaturesSection />
         <MissionSection />
         <ValuesSection />

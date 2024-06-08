@@ -22,10 +22,7 @@ const features = [
 ];
 
 const FeaturesSection = () => (
-  <section
-    id="features"
-    className="features-section"
-  >
+  <section id="features" className="features-section">
     <h2 className="text-4xl font-bold mb-8 text-black">Our Features</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {features.map((feature, index) => (
@@ -33,11 +30,17 @@ const FeaturesSection = () => (
           key={index}
           className="feature bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-200"
         >
-          <img
-            src={feature.imageUrl}
-            alt={feature.title}
-            className="w-full h-48 object-cover rounded-lg mb-4"
-          />
+          <picture>
+            <source
+              srcSet={`${feature.imageUrl}?w=400 400w, ${feature.imageUrl}?w=800 800w`}
+              sizes="(max-width: 600px) 400px, 800px"
+            />
+            <img
+              src={feature.imageUrl}
+              alt={feature.title}
+              className="w-full h-48 object-cover rounded-lg mb-4"
+            />
+          </picture>
           <h3 className="text-2xl font-semibold mb-4 text-black">
             {feature.title}
           </h3>

@@ -9,7 +9,7 @@ const HomeSection = () => (
       backgroundImage: "url(/images/hero-bg.jpg)",
     }}
   >
-    <div className="text-slate-500 py-2 px-4 rounded-full mb-4 shadow outline decoration-slate-400">
+    <div className="text-slate-500 py-2 px-4 rounded-full mb-4 shadow outline">
       <p className="text-sm">
         Coming soon! <span className="text-blue-600 font-bold">Stay tuned</span>
       </p>

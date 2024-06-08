@@ -13,7 +13,7 @@ const ValuesSection = () => (
           fill="none"
           viewBox="0 0 24 24"
           strokeLinecap="1.5"
-          stroke="#000"
+          stroke="currentColor"
           className="w-10 h-10 mb-4"
         >
           <path
@@ -36,7 +36,7 @@ const ValuesSection = () => (
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth="1.5"
-          stroke="#000"
+          stroke="currentColor"
           className="w-10 h-10 mb-4"
         >
           <path
@@ -58,7 +58,7 @@ const ValuesSection = () => (
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth="1.5"
-          stroke="#000"
+          stroke="currentColor"
           className="w-10 h-10 mb-4"
         >
           <path

@@ -45,8 +45,8 @@ export default function Navigation() {
               <div className="flex items-center">
                 <div className="flex-shrink-0">
                   <img
-                    className="h-8 w-8"
-                    src="/images/logo.png"
+                    className="h-8 w-8 rounded-full"
+                    src="/images/logo-pink.png"
                     alt="Piggie"
                   />
                 </div>

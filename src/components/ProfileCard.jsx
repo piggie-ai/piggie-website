@@ -12,7 +12,7 @@ export default function ProfileCard({
   email,
 }) {
   return (
-    <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300 cursor-pointer w-96">
+    <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition duration-300 cursor-pointer w-96 border border-gray-200 sm:ml-2 sm:mr-2">
       <div className="flex flex-col items-center">
         <img
           className="w-32 h-32 rounded-full object-cover mb-4"
@@ -33,6 +33,7 @@ export default function ProfileCard({
               target="_blank"
               rel="noreferrer"
               className="text-gray-400 hover:text-gray-600"
+              alt="LinkedIn profile link of the team member"
               onClick={(e) => e.stopPropagation()}
             >
               <FaLinkedin size={24} />
@@ -43,6 +44,7 @@ export default function ProfileCard({
               href={github}
               target="_blank"
               rel="noreferrer"
+              alt="GitHub profile link of the team member"
               className="text-gray-400 hover:text-gray-600"
               onClick={(e) => e.stopPropagation()}
             >
@@ -54,6 +56,7 @@ export default function ProfileCard({
               href={x}
               target="_blank"
               rel="noreferrer"
+              alt="Twitter profile link of the team member"
               className="text-gray-400 hover:text-gray-600"
               onClick={(e) => e.stopPropagation()}
             >
@@ -63,6 +66,7 @@ export default function ProfileCard({
           {email && (
             <a
               href={`mailto:${email}`}
+              alt="Email address of the team member"
               className="text-gray-400 hover:text-gray-600"
               onClick={(e) => e.stopPropagation()}
             >

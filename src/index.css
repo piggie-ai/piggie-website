@@ -6,11 +6,6 @@ body {
   @apply bg-white;
 }
 
-.hero-section {
-  @apply text-white text-center py-20 px-4;
-  background-attachment: fixed;
-}
-
 .home-section,
 .features-section,
 .mission-section,
@@ -21,10 +16,18 @@ body {
   background-attachment: fixed;
 }
 
+.home-section h1 {
+  @apply text-4xl md:text-6xl;
+}
+
 .feature,
-.value,
-.team-member {
-  @apply p-6 rounded-lg shadow-lg;
+.value {
+  @apply p-6 rounded-lg shadow-lg border border-gray-200;
+}
+
+.feature img,
+.value img {
+  @apply w-full h-48 object-cover rounded-lg mb-4;
 }
 
 footer {
@@ -35,4 +38,10 @@ footer {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+}
+
+@media (max-width: 768px) {
+  .parallax {
+    background-attachment: scroll;
+  }
 }
