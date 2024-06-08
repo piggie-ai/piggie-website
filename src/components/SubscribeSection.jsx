@@ -1,26 +1,24 @@
 import React, { useState } from "react";
 
-const SubscribeSection = ({ handleSubmit }) => {
+const SubscribeSection = () => {
   const [email, setEmail] = useState("");
 
-  const onSubmit = (e) => {
+  const handleSubmit = async (e) => {
+    // TODO: Handle form submission
     e.preventDefault();
-    handleSubmit(email);
+    console.log(email);
   };
 
   return (
     <section
       id="subscribe"
-      className="subscribe-section min-h-screen flex flex-col justify-center items-center text-center bg-cover bg-center shadow-md rounded p-8 my-6"
-      style={{
-        backgroundImage: "url(/images/subscribe-bg.jpg)",
-      }}
+      className="subscribe-section"
     >
       <h2 className="text-3xl font-semibold mb-4 text-black">Stay Updated!</h2>
       <p className="mb-4 text-black">
         Join our mailing list to get the latest updates about Piggie.
       </p>
-      <form onSubmit={onSubmit} className="w-full max-w-md">
+      <form onSubmit={handleSubmit} className="w-full max-w-md">
         <div className="mb-4">
           <label
             htmlFor="email"

@@ -11,12 +11,13 @@ body {
   background-attachment: fixed;
 }
 
+.home-section,
 .features-section,
 .mission-section,
 .values-section,
 .team-section,
 .subscribe-section {
-  @apply text-white text-center py-20 px-4;
+  @apply min-h-screen flex flex-col justify-center items-center text-center py-20 px-4;
   background-attachment: fixed;
 }
 

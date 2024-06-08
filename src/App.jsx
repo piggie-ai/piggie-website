@@ -7,21 +7,14 @@ import FeaturesSection from "./components/FeaturesSection";
 import MissionSection from "./components/MissionSection";
 import ValuesSection from "./components/ValuesSection";
 import TeamSection from "./components/TeamSection";
-import SubscribeSection from "./components/SubscribeSection";
 
 export default function App() {
-  // smooth scroll
   useEffect(() => {
     new SmoothScroll('a[href*="#"]', {
       speed: 800,
       speedAsDuration: true,
     });
   }, []);
-
-  // TODO: Implement a function to handle mail subscription
-  const handleSubmit = (email) => {
-    console.log("Email submitted:", email);
-  };
 
   return (
     <div className="bg-white min-h-screen flex flex-col items-center">
@@ -32,7 +25,6 @@ export default function App() {
         <MissionSection />
         <ValuesSection />
         <TeamSection />
-        <SubscribeSection handleSubmit={handleSubmit} />
       </main>
       <Footer />
     </div>
