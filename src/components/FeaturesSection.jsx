@@ -5,19 +5,19 @@ const features = [
     title: "Monthly Budgeting Support",
     description:
       "Get detailed insights into your spending habits and discover where you can save.",
-    imageUrl: "/images/track-spending.jpg",
+    imageUrl: "/images/track-spending.webp",
   },
   {
     title: "Chose The Plan That's Right For You",
     description:
       "We offer a variety of paths to meet your needs, whether you're just starting out or a seasoned budgeter.",
-    imageUrl: "/images/paths.jpg",
+    imageUrl: "/images/paths.webp",
   },
   {
     title: "Exclusive Deals and Discounts",
     description:
       "Unlock special offers and discounts from our partners to help you save even more.",
-    imageUrl: "/images/deals.jpg",
+    imageUrl: "/images/deals.webp",
   },
 ];
 

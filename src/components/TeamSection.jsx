@@ -6,7 +6,7 @@ const TeamSection = () => (
     id="team"
     className="team-section parallax"
     style={{
-      backgroundImage: "url(/images/team-bg.jpg)",
+      backgroundImage: "url(/images/team-bg.webp)",
     }}
   >
     <h2 className="text-4xl font-bold mb-8 text-black">Our Team</h2>

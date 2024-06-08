@@ -10,7 +10,7 @@ const ValuesSection = () => (
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
-          className="w-10 h-10 mb-4 group-hover:text-green-800 transition duration-200"
+          className="w-10 h-10 mb-4"
         >
           <path
             strokeLinecap="round"
@@ -32,7 +32,7 @@ const ValuesSection = () => (
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
-          className="w-10 h-10 mb-4 group-hover:text-yellow-600 transition duration-200"
+          className="w-10 h-10 mb-4"
         >
           <path
             strokeLinecap="round"
@@ -54,7 +54,7 @@ const ValuesSection = () => (
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
-          className="w-10 h-10 mb-4 group-hover:text-blue-700 transition duration-200"
+          className="w-10 h-10 mb-4"
         >
           <path
             strokeLinecap="round"

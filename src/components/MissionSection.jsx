@@ -5,7 +5,7 @@ const MissionSection = () => (
     id="mission"
     className="mission-section parallax"
     style={{
-      backgroundImage: "url(/images/mission-bg.jpg)",
+      backgroundImage: "url(/images/mission-bg.webp)",
     }}
   >
     <div className="max-w-4xl mx-auto">
@@ -17,7 +17,7 @@ const MissionSection = () => (
         informed financial decisions and achieve their financial goals.
       </p>
       <img
-        src="/images/community.jpg"
+        src="/images/community.webp"
         alt="Our Mission"
         className="rounded-lg w-full max-w-screen-md mx-auto shadow-lg"
       />

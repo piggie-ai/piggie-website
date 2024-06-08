@@ -6,7 +6,7 @@ const HomeSection = () => (
     id="home"
     className="home-section parallax"
     style={{
-      backgroundImage: "url(/images/hero-bg.jpg)",
+      backgroundImage: "url(/images/hero-bg.webp)",
     }}
   >
     <div className="text-slate-500 py-2 px-4 rounded-full mb-4 shadow outline">
