@@ -3,7 +3,7 @@ import React from "react";
 const MissionSection = () => (
   <section
     id="mission"
-    className="mission-section min-h-screen text-center p-10 bg-cover bg-center parallax"
+    className="mission-section parallax"
     style={{
       backgroundImage: "url(/images/mission-bg.jpg)",
     }}

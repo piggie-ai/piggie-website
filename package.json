@@ -1,8 +1,8 @@
 {
-  "name": "piggie-ai.github.io",
+  "name": "piggie-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://piggie-ai.github.io",
+  "homepage": "https://piggie.app/",
   "dependencies": {
     "@headlessui/react": "^2.0.4",
     "@heroicons/react": "^2.1.3",

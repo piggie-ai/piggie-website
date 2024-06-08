@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa6";
 const HomeSection = () => (
   <section
     id="home"
-    className="home-section min-h-screen flex flex-col justify-center items-center text-center p-10 bg-cover bg-center parallax"
+    className="home-section parallax"
     style={{
       backgroundImage: "url(/images/hero-bg.jpg)",
     }}
@@ -21,12 +21,12 @@ const HomeSection = () => (
       Your bank account's best friend.
     </p>
     <div className="space-x-4">
-      <a
+      {/* <a
         href="#subscribe"
         className="bg-black hover:bg-gray-700 text-white font-bold py-3 px-4 rounded-lg"
       >
         Subscribe
-      </a>
+      </a> */}
       <a
         href="#features"
         className="text-black font-bold py-3 px-4 rounded-lg inline-flex items-center hover:underline transition duration-200 decoration-slate-400"

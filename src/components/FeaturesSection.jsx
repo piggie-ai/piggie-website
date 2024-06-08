@@ -1,4 +1,3 @@
-// src/components/FeaturesSection.jsx
 import React from "react";
 
 const features = [
@@ -25,7 +24,7 @@ const features = [
 const FeaturesSection = () => (
   <section
     id="features"
-    className="features-section min-h-screen text-center p-10 bg-white"
+    className="features-section"
   >
     <h2 className="text-4xl font-bold mb-8 text-black">Our Features</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

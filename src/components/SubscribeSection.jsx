@@ -12,7 +12,7 @@ const SubscribeSection = () => {
   return (
     <section
       id="subscribe"
-      className="subscribe-section min-h-screen flex flex-col justify-center items-center text-center bg-cover bg-center shadow-md rounded p-8 my-6"
+      className="subscribe-section"
     >
       <h2 className="text-3xl font-semibold mb-4 text-black">Stay Updated!</h2>
       <p className="mb-4 text-black">

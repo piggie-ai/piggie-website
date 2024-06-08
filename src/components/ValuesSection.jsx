@@ -3,7 +3,7 @@ import React from "react";
 const ValuesSection = () => (
   <section
     id="values"
-    className="values-section min-h-screen bg-cover bg-center text-center p-10"
+    className="values-section"
   >
     <h2 className="text-4xl font-bold mb-8 text-black">Our Values</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">

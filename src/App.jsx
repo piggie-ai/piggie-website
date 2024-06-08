@@ -7,7 +7,6 @@ import FeaturesSection from "./components/FeaturesSection";
 import MissionSection from "./components/MissionSection";
 import ValuesSection from "./components/ValuesSection";
 import TeamSection from "./components/TeamSection";
-import SubscribeSection from "./components/SubscribeSection";
 
 export default function App() {
   useEffect(() => {
@@ -26,7 +25,6 @@ export default function App() {
         <MissionSection />
         <ValuesSection />
         <TeamSection />
-        <SubscribeSection />
       </main>
       <Footer />
     </div>
