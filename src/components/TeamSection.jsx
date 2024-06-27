@@ -32,12 +32,6 @@ const TeamSection = () => (
         github="https://github.com/zachkepe"
       />
       <ProfileCard
-        profile_image="/images/lia.jpg"
-        name="Lia Kim"
-        role="UX Designer"
-        linkedin="https://www.linkedin.com/in/liayoonkim/"
-      />
-      <ProfileCard
         profile_image="/images/freya.jpg"
         name="Freya Zhang"
         role="UX Designer"
