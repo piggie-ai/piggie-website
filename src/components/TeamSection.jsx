@@ -31,12 +31,6 @@ const TeamSection = () => (
         linkedin="https://www.linkedin.com/in/zachary-kepe-6801b7241/"
         github="https://github.com/zachkepe"
       />
-      <ProfileCard
-        profile_image="/images/freya.jpg"
-        name="Freya Zhang"
-        role="UX Designer"
-        linkedin="https://www.linkedin.com/in/freya-zhang-184617260/"
-      />
     </div>
   </section>
 );
